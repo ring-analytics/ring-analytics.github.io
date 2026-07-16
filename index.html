@@ -80,7 +80,7 @@
   }
   nav .wrap{
     display:flex; align-items:center; justify-content:space-between;
-    height:110px;
+    height:124px;
   }
   .brand{
     font-family:'Roboto Slab',serif; font-weight:800; font-size:1.15rem;
@@ -88,16 +88,20 @@
     display:flex; align-items:center; gap:10px;
   }
   .brand .brand-mark{
-    height:88px; width:auto; display:block;
+    height:104px; width:auto; display:block;
   }
   nav ul{
-    list-style:none; display:flex; gap:32px;
-    font-size:0.92rem; font-weight:500;
+    list-style:none; display:flex; gap:34px;
+    font-family:'Roboto Slab',serif;
+    font-size:0.95rem; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.07em;
   }
   nav ul a{
-    text-decoration:none; opacity:0.75; transition:opacity .15s;
+    text-decoration:none; color:var(--ink); opacity:0.85;
+    padding-bottom:4px; border-bottom:2px solid transparent;
+    transition:opacity .15s, border-color .15s, color .15s;
   }
-  nav ul a:hover{ opacity:1; }
+  nav ul a:hover{ opacity:1; color:var(--tag-red); border-bottom-color:var(--tag-red); }
   nav ul a:focus-visible{ outline:2px solid var(--tag-red); outline-offset:4px; }
 
   #snapshot{
@@ -363,7 +367,7 @@
       height:auto; flex-direction:column; align-items:flex-start;
       gap:6px; padding-top:10px; padding-bottom:12px;
     }
-    .brand .brand-mark{ height:56px; }
+    .brand .brand-mark{ height:68px; }
     nav ul{ gap:18px; font-size:0.85rem; flex-wrap:wrap; }
     .contact-block{ flex-direction:column; align-items:flex-start; }
   }
